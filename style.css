@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#stage {
+  position: relative;
+  width: 1280px;
+  height: 720px;
+}
+
+#game {
+  display: block;
+  outline: none;
+}
+
+#ad-container {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  background: #000;
+}
+
+#ad-content-video {
+  width: 100%;
+  height: 100%;
+}

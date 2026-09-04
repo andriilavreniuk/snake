@@ -1,0 +1,15 @@
+export const STRINGS = {
+  startTitle: 'Snake',
+  startBody: 'Would you like to play?',
+  gameOverTitle: 'Game over',
+  gameOverBody: 'Play again?',
+  adProblemTitle: 'Ad was not completed',
+  adProblemBody: 'The game unlocks after a full ad. Watch it again?',
+  adLoading: 'Loading ad\u2026',
+  yes: 'Yes',
+  no: 'No',
+  retry: 'Watch again',
+  leave: 'Leave',
+  hint: '\u2190 \u2192 choose \u00b7 Enter select \u00b7 Backspace no',
+  score: 'Score',
+} as const;

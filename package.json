@@ -1,0 +1,26 @@
+{
+  "name": "snake-canvas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Snake game on canvas",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "bundle": "esbuild src/main.ts --bundle --format=esm --target=es2017 --sourcemap --outfile=dist/main.js",
+    "build": "npm run typecheck && npm run bundle",
+    "watch": "npm run bundle -- --watch",
+    "serve": "http-server -p 8080 -c-1",
+    "serve:https": "http-server -S -C .certs/localhost.pem -K .certs/localhost-key.pem -p 8443 -c-1",
+    "dev": "npm run build && npm run serve",
+    "dev:https": "npm run build && npm run serve:https"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.12",
+    "esbuild": "^0.28.2",
+    "http-server": "^14.1.1",
+    "typescript": "^5.9.3"
+  }
+}
